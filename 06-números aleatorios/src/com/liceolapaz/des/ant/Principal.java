@@ -24,24 +24,36 @@ public class Principal {
 		// Almacenar numero intentos:
 
 		int numeroIntentos = 0;
-		// Generar número aleatorio y almacenarlo
+		while ( numeroIntentos < maximoIntentos) {
+			
+			// Generar número aleatorio y almacenarlo
 
-		int numeroAleatorio = generarNumeroAleatorio(1, 10);
+			int numeroAleatorio = generarNumeroAleatorio(1, 10);
 
-		// Imprimir numero aleatorio
+			// Imprimir numero aleatorio
 
-		System.out.println("El número generado fue: ");
+			System.out.println("El número generado fue: ");
 
-		//
+			//
 
-		// Sumar 1 a los intentos
+			// Sumar 1 a los intentos
 
-		numeroIntentos++; // numero intentos es igual a numero de intentos más 1
+			numeroIntentos++; // numero intentos es igual a numero de intentos más 1
 
-		// Comprobar si el número generado es igual al número a buscar
+			// Comprobar si el número generado es igual al número a buscar
 
-		comprobarNumero(numeroBuscar, numeroAleatorio, numeroIntentos, maximoIntentos);
-
+			comprobarNumero(numeroBuscar, numeroAleatorio, numeroIntentos, maximoIntentos);
+			
+			// Si encontramos el numero salir del bucle
+			
+			if (numeroAleatorio == numeroBuscar) {
+				break;
+			}
+			
+		}
+			
+		}
+		
 	}
 
 	private static void comprobarNumero(int numeroBuscar, int numeroAleatorio, int numeroIntentos, int maximoIntentos) {
