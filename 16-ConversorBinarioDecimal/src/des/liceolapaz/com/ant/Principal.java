@@ -1,4 +1,4 @@
-package com.liceolapaz.ant;
+package des.liceolapaz.com.ant;
 
 import java.util.Scanner;
 
